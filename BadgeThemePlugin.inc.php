@@ -14,7 +14,7 @@
  */
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class DefaultChildThemePlugin extends ThemePlugin {
+class BadgeThemePlugin extends ThemePlugin {
 	/**
 	 * Initialize the theme's styles, scripts and hooks. This is only run for
 	 * the currently active theme.
@@ -22,8 +22,7 @@ class DefaultChildThemePlugin extends ThemePlugin {
 	 * @return null
 	 */
 	public function init() {
-		$this->setParent('defaultthemeplugin');
-		$this->modifyStyle('stylesheet', array('addLess' => array('styles/remove-borders.less')));
+		$this->setParent('bootstrapthreethemeplugin');
 	}
 
 	/**
@@ -31,7 +30,7 @@ class DefaultChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.defaultChild.name');
+                return __('plugins.themes.defaultChild.name');
 	}
 
 	/**
@@ -39,7 +38,7 @@ class DefaultChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.defaultChild.description');
+	        return __('plugins.themes.defaultChild.description');
 	}
 }
 

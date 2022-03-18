@@ -16,8 +16,8 @@
  *
  */
 
-require_once('DefaultChildThemePlugin.inc.php');
+require_once('BadgeThemePlugin.inc.php');
 
-return new DefaultChildThemePlugin();
+return new BadgeThemePlugin();
 
 ?>

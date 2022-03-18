@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.defaultChild.name">Example Child Theme</message>
-	<message key="plugins.themes.defaultChild.description">This theme is an example of a child theme of the default theme.</message>
+	<message key="plugins.themes.defaultChild.name">Badge Child Theme</message>
+	<message key="plugins.themes.defaultChild.description">This theme is a child theme Bootstrap3 and includes badges for articles.</message>
 </locale>

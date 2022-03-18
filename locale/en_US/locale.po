@@ -12,7 +12,7 @@ msgstr ""
 "Language: \n"
 
 msgid "plugins.themes.defaultChild.name"
-msgstr "Example Child Theme"
+msgstr "Badge Child Theme"
 
 msgid "plugins.themes.defaultChild.description"
-msgstr "This theme is an example of a child theme of the default theme."
+msgstr "This theme is a child theme Bootstrap3 and includes badges for articles."
