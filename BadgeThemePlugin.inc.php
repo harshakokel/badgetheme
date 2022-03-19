@@ -23,6 +23,7 @@ class BadgeThemePlugin extends ThemePlugin {
 	 */
 	public function init() {
 		$this->setParent('bootstrapthreethemeplugin');
+		$this->addStyle('fontawesome','styles/fontawesome/css/all.css');
 	}
 
 	/**

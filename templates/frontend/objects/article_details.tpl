@@ -74,17 +74,28 @@
 					{if $primaryGalleys}
 						{foreach from=$primaryGalleys item=galley}
 							{include file="frontend/objects/galley_link.tpl" parent=$article purchaseFee=$currentJournal->getSetting('purchaseArticleFee') purchaseCurrency=$currentJournal->getSetting('currency')}
-						{/foreach}
-					{/if}
+                                            	{/foreach}
+			                
+                         		{/if}
+{* $badges[]="HK" *}
 					{if $supplementaryGalleys}
 						{foreach from=$supplementaryGalleys item=galley}
 							{include file="frontend/objects/galley_link.tpl" parent=$article isSupplementary="1"}
-						{/foreach}
+                                                         {append var="badges" value=$galley->getGalleyLabel()|escape}
+                                                {/foreach}
 					{/if}
 				</div>
 			{/if}
 
 			<div class="list-group">
+                                {* Article Badges*}
+                                {if $badges}
+                                        <div class="list-group-item badges">
+                                           {capture assign=translatedBadges}{translate key="submissions.badges"}{/capture}
+                                           <strong>{translate key="semicolon" label=$translatedBadges}</strong> {if in_array('Code', $badges)} <i class="fa-solid fa-trophy code" style="color:#cccccc;"></i> {/if} {if in_array('Data', $badges)}  <i class="fa-solid fa-star data" style="color:#ffd11e;"></i> {/if}
+
+                                        </div>                                    
+                                {/if}
 
 				{* Published date *}
 				{if $publication->getData('datePublished')}

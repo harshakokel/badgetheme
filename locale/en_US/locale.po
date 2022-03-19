@@ -16,3 +16,6 @@ msgstr "Badge Child Theme"
 
 msgid "plugins.themes.defaultChild.description"
 msgstr "This theme is a child theme Bootstrap3 and includes badges for articles."
+
+msgid "submissions.badges"
+msgstr "Badges"
